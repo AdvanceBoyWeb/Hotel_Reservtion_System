@@ -77,7 +77,7 @@ public class hotelReservationSystem {
                 int affectedRows = statement.executeUpdate(sql);
 
                 if (affectedRows > 0) {
-                    System.out.println("Reservation Successfully!");
+                    System.out.println("Reservation Successfully!!");
                 } else {
                     System.out.println("Reservation failed!");
                 }
