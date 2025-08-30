@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class hotelReservationSystem {
     private static final String url = "jdbc:mysql://localhost:3306/hotel_db";
     private static final String username = "root";
-    private static final String password = "*****";
+    private static final String password = "Chand@123";
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 //        try{
 //            Class.forName("com.mysql.cj.jdbc.Driver");
@@ -107,7 +107,7 @@ public class hotelReservationSystem {
                 String reservationDate = resultSet.getTimestamp("reservation_date").toString();
 
                 // Format and display the reservation data in  table like format
-                System.out.printf("| %-14d | %-15s | %-15d | %-17s | %-23s   |\n",
+                System.out.printf("| %-14d | %-15s | %-13d | %-20s | %-19s   |\n",
                         reservationId, guestName, roomNumber, contactnumber, reservationDate);
             }
             System.out.println("+----------------+-----------------+-----------------+-------------------+---------------------------+");
